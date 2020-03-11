@@ -1,5 +1,8 @@
 <?php
 
+//
+//Não deixa o PHP instanciar essa classe
+//ela serve somente de base para outros(sozinha não funciona)
 class Cliente
 {
     public $nome;
@@ -7,6 +10,7 @@ class Cliente
     public $email;
     public $contato;
     protected $saldo = 0;
+    private $status = 1;
 
 
     public function addSaldo($valor)
